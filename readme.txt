@@ -42,7 +42,7 @@ Please view [documentation](http://help.dotonpaper.net/dop-shortcodes-wordpress-
 [/dopaccordions]`
 
 = Container =
-`[dopcontainer]Quisque pellentesque, nibh eu porta pulvinar, leo diam tincidunt tellus, a lacinia justo odio sed ligula.[/dopcontainer]`
+`[dopcontainer]text[/dopcontainer]`
 
 = Grid =
 `[dopgridrow]
