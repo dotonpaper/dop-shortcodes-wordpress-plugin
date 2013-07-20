@@ -1,0 +1,580 @@
+@charset "utf-8";
+
+/*
+* Title                   : DOP Shortcodes (WordPress Plugin)
+* Version                 : 1.0
+* File                    : style-dopshortcodes.php
+* File Version            : 1.0
+* Created / Last Modified : 19 July 2013
+* Author                  : Dot on Paper
+* Copyright               : © 2013 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : DOP Shortcodes Stylesheet.
+*/
+
+/************************************************************ Begin Accordion */
+
+.dopaccordion{
+    margin: 0 0 1.5em 0;
+}
+ 
+.dopaccordion .dopaccordion-head{
+    margin: 0 0 1px 0;
+    z-index: 1;
+}
+
+.dopaccordion .dopaccordion-head a{
+    background: #414141;
+    color: #e2e2e2;
+    display: block;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 0 1em;
+    text-decoration: none;
+    -webkit-transition: background 300ms linear, color 300ms linear;
+    -moz-transition: background 300ms linear, color 300ms linear;
+    -ms-transition: background 300ms linear, color 300ms linear;
+    -o-transition: background 300ms linear, color 300ms linear;
+    transition: background 300ms linear, color 300ms linear;
+}
+
+.dopaccordion .dopaccordion-head a .icon,
+.dopaccordion .dopaccordion-head a .icon-active{
+    background: none;
+    color: #e2e2e2;
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    line-height: 1.35em;
+    padding: 0 0.6em 0 0;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.dopaccordion .dopaccordion-head a .icon-active{
+    display: none;
+}
+
+.dopaccordion .dopaccordion-head a:hover{
+    background: #000000;
+    color: #e2e2e2;
+    -webkit-transition: background 300ms linear, color 300ms linear;
+    -moz-transition: background 300ms linear, color 300ms linear;
+    -ms-transition: background 300ms linear, color 300ms linear;
+    -o-transition: background 300ms linear, color 300ms linear;
+    transition: background 300ms linear, color 300ms linear;
+}
+
+.dopaccordion .dopaccordion-head a:hover .icon,
+.dopaccordion .dopaccordion-head a:hover .icon-active{
+    color: #e2e2e2;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+} 
+
+.dopaccordion .dopaccordion-head.ui-accordion-header-active{
+    margin: 0;
+    z-index: 1;
+}
+
+.dopaccordion .dopaccordion-head.ui-accordion-header-active a{
+    background: #e2e2e2;
+    color: #212121;
+    -webkit-transition: background 300ms linear, color 300ms linear;
+    -moz-transition: background 300ms linear, color 300ms linear;
+    -ms-transition: background 300ms linear, color 300ms linear;
+    -o-transition: background 300ms linear, color 300ms linear;
+    transition: background 300ms linear, color 300ms linear;
+}
+
+.dopaccordion .dopaccordion-head.ui-accordion-header-active,
+.dopaccordion .dopaccordion-head.ui-state-focus{
+    outline: none;
+}
+
+.dopaccordion .dopaccordion-head.ui-accordion-header-active a .icon,
+.dopaccordion .dopaccordion-head.ui-accordion-header-active a .icon-active{
+    color: #212121;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}   
+
+.dopaccordion .dopaccordion-head.ui-accordion-header-active a .icon{
+    display: none;
+}
+
+.dopaccordion .dopaccordion-head.ui-accordion-header-active a .icon-active{
+    display: block;
+}
+
+.dopaccordion .dopaccordion-content{
+    border: 1px solid #e2e2e2;
+    margin: 0 0 1px 0;
+    padding: 1.5em 1em;
+    z-index: 0;
+}
+
+.dopaccordion .dopaccordion-content:last-child{
+    margin: 0;
+}
+
+/************************************************************** End Accordion */
+
+/************************************************************ Begin Container */
+
+.dopcontainer{
+    border: 1px solid #e2e2e2;
+    margin: 0 0 1.5em 0;
+    padding: 1.5em 1em;
+}
+
+/************************************************************** End Container */
+
+/**************************************************************** Begin Image */
+
+.dopimage{
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+.dopimage.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dopimage.left{
+    display: block;
+    float: left;
+    margin-right: 1.5em;
+}
+.dopimage.right{
+    display: block;;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.dopimage img{
+    max-height: none !important;
+    max-width: none !important;
+    min-height: 0px !important;
+    min-width: 0px !important;;
+}
+
+/****************************************************************** End Image */
+
+/**************************************************************** Begin Lists */
+
+
+.doplist{
+    margin: 0 0 1.5em 0;
+}
+
+.doplist li{
+    color: #212121;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.doplist.arrows li{
+    background:  url('../images/list-arrows.png') no-repeat top left;
+    margin: 0;
+    padding: 0 0 0 2em;
+}
+
+.doplist.checks li{
+    background:  url('../images/list-checks.png') no-repeat top left;
+    margin: 0;
+    padding: 0 0 0 2em;
+}
+
+.doplist.circles li{
+    background:  url('../images/list-circles.png') no-repeat top left;
+    margin: 0;
+    padding: 0 0 0 2em;
+}
+
+.doplist.diamonds li{
+    background:  url('../images/list-diamonds.png') no-repeat top left;
+    margin: 0;
+    padding: 0 0 0 2em;
+}
+
+.doplist ul{
+    margin-bottom: 0;
+}
+
+/****************************************************************** End Lists */
+
+/************************************************************ Begin Separator */
+
+.dopseparator{
+    background: #e2e2e2;
+    height: 1px;
+    margin: 0 0 1.5em 0;
+}
+
+/************************************************************** End Separator */
+
+/********************************************************* Begin Social Icons */
+
+.dopsocialicon{
+    background-color: #414141;
+    border: none;
+    color: #e2e2e2;
+    display: block;
+    float: left;
+    font-size: 1em;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 0.5em 1.5em 0;
+    text-align: center;
+    text-decoration: none;
+    width: 2em;
+    -webkit-transition: background-color 200ms ease-in;
+    -moz-transition: background-color 200ms ease-in;
+    -ms-transition: background-color 200ms ease-in;
+    -o-transition: background-color 200ms ease-in;
+    transition: background-color 200ms ease-in;
+}
+
+.dopsocialicon .dopsocialicon-tooltip{
+    background: #000000;
+    color: #e2e2e2;
+    font-size: 10px;
+    font-weight: normal;
+    margin: -24px 0 0 -35px;
+    line-height: 18px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: none;
+    visibility: hidden;
+    width: 58px;
+    z-index: 300;
+}
+
+.dopsocialicon .dopsocialicon-tooltip .dopsocialicon-tooltip-arrow{
+    border-color: #000000 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px;
+    bottom: -9px;
+    height: 0;
+    left: 23px;
+    position: absolute;
+    width: 0;
+}
+
+.dopsocialicon:hover{
+    background-color: #000000;
+    color: #e2e2e2;
+    -webkit-transition: background-color 200ms ease-in;
+    -moz-transition: background-color 200ms ease-in;
+    -ms-transition: background-color 200ms ease-in;
+    -o-transition: background-color 200ms ease-in;
+    transition: background-color 200ms ease-in;
+}
+
+.dopsocialicon:hover .dopsocialicon-tooltip{
+    opacity: 1;
+    -webkit-transition: opacity 800ms ease-in;
+    -moz-transition: opacity 800ms ease-in;
+    -ms-transition: opacity 800ms ease-in;
+    -o-transition: opacity 800ms ease-in;
+    transition: opacity 800ms ease-in;
+    visibility: visible;
+}
+
+/*********************************************************** End Social Icons */
+
+/******************************************************** Begin Progress Bars */
+
+.dopprogressbar{
+    background: #414141;
+    height: 2em;
+    margin: 0 0 1.5em 0;
+    position: relative;
+}
+
+.dopprogressbar .dopprogressbar-progress{
+    background: #000000;
+    display: block;
+    height: 2em;
+    position: absolute;
+}
+
+.dopprogressbar .dopprogressbar-label{
+    color: #e2e2e2;
+    display: block;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 0 1em;
+    position: absolute;
+}
+
+/********************************************************** End Progress Bars */
+
+/*************************************************************** Begin Tables */
+
+.doptable{
+    border-collapse: collapse;
+    border-top: 1px solid #414141;
+    border-right: 1px solid #414141;
+    margin: 0 0 1.5em 0;
+    width: 100%;
+}	
+				
+.doptable tr th{
+    background: #414141;
+    border: 1px solid #414141;
+    border-right: none;
+    color: #e2e2e2;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 2em;
+    padding: 0 1em;
+    text-align: left;
+}	
+		
+.doptable tr td{
+    background: #ffffff;
+    border-bottom: 1px solid #414141;
+    border-left: 1px solid #414141;
+    color: #212121;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 0 1em;
+    text-align: left;
+}
+
+/***************************************************************** End Tables */
+
+/***************************************************************** Begin Tabs */
+
+.doptabs{
+    margin: 0 0 1.5em 0;
+}
+
+.doptabs ul{
+    margin: 0 !important;
+    overflow: auto;
+    padding: 0;
+}
+
+.doptabs ul li{ 
+    float: left; 
+    list-style: none;
+    margin: 0 2px 0 0;
+    padding: 0;
+    z-index: 30;
+}
+
+.doptabs ul li a{
+    background: #414141;
+    color: #e2e2e2; 
+    display: block;
+    float: left;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 0;
+    padding: 0 1em;
+    text-align: center;
+    text-decoration: none;
+    z-index: 0;
+    -webkit-transition: background 300ms linear, color 300ms linear;
+    -moz-transition: background 300ms linear, color 300ms linear;
+    -ms-transition: background 300ms linear, color 300ms linear;
+    -o-transition: background 300ms linear, color 300ms linear;
+    transition: background 300ms linear, color 300ms linear;
+}
+
+.doptabs li a:hover{
+    background: #000000;
+    color: #e2e2e2;
+    -webkit-transition: background 300ms linear, color 300ms linear;
+    -moz-transition: background 300ms linear, color 300ms linear;
+    -ms-transition: background 300ms linear, color 300ms linear;
+    -o-transition: background 300ms linear, color 300ms linear;
+    transition: background 300ms linear, color 300ms linear;
+}
+
+.doptabs ul li a:focus{
+    outline: none;
+}
+
+.doptabs li.ui-state-active a{
+    background: #e2e2e2;
+    color: #212121;
+}
+
+.doptabs .doptab-container{
+    border: 1px solid #e2e2e2;
+    padding: 1.5em 1em;
+    z-index: 3;
+}
+
+/******************************************************************* End Tabs */
+
+/*************************************************************** Begin Toggle */
+
+.doptoggle-wrapper{
+    margin: 0 0 1.5em 0;
+}
+
+.doptoggle-wrapper .doptoggle{
+    background: #414141;
+    color: #e2e2e2;
+    display: block;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 0 1em;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.doptoggle-wrapper .doptoggle .icon,
+.doptoggle-wrapper .doptoggle .active-icon{
+    background: none;
+    color: #e2e2e2;
+    display: block;
+    float: right;
+    font-size: 1.5em;
+    line-height: 1.35em;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.doptoggle-wrapper.dopactive .doptoggle{
+    background: #e2e2e2;
+    color: #212121;
+    -webkit-transition: background 300ms linear, color 300ms linear;
+    -moz-transition: background 300ms linear, color 300ms linear;
+    -ms-transition: background 300ms linear, color 300ms linear;
+    -o-transition: background 300ms linear, color 300ms linear;
+    transition: background 300ms linear, color 300ms linear;
+}
+
+.doptoggle-wrapper.dopactive .doptoggle .icon,
+.doptoggle-wrapper.dopactive .doptoggle .active-icon{
+    color: #212121;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.doptoggle-wrapper .doptoggle:hover{
+    background: #000000;
+    color: #e2e2e2;
+    -webkit-transition: background 300ms linear, color 300ms linear;
+    -moz-transition: background 300ms linear, color 300ms linear;
+    -ms-transition: background 300ms linear, color 300ms linear;
+    -o-transition: background 300ms linear, color 300ms linear;
+    transition: background 300ms linear, color 300ms linear;
+}
+
+.doptoggle-wrapper .doptoggle:hover .icon,
+.doptoggle-wrapper .doptoggle:hover .active-icon{
+    color: #e2e2e2;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.doptoggle-wrapper .doptoggle .icon,
+.doptoggle-wrapper.dopactive .doptoggle .active-icon{
+    display: block;
+}
+
+.doptoggle-wrapper.dopactive .doptoggle .icon,
+.doptoggle-wrapper .doptoggle .active-icon{
+    display: none;
+}
+
+.doptoggle-wrapper .doptoggle-content{
+    border: 1px solid #e2e2e2;
+    display: none;
+    padding: 1.5em 1em;
+}
+
+/***************************************************************** End Toggle */
+
+/***************************************************************** Begin Grid */
+
+.dopgridrow{
+    overflow: auto;
+    margin: 0 0 1.5em 0;
+    width: 100%;    
+}
+
+.dopgridrow .dopgridcolumn{ 
+    diplay: block;
+    float: left;
+    margin-right: 3%;
+} 
+
+.dopgridrow .dopgridcolumn:last-child{ 
+    margin-right: 0;
+} 
+
+/* 1/6 */
+.dopgridrow .dopgridcolumn.dopgrid2{ 
+    width: 14.1%;
+}
+    
+/* 1/4 */
+.dopgridrow .dopgridcolumn.dopgrid3{
+    width: 22.7%;
+}
+  
+/* 1/3 */  
+.dopgridrow .dopgridcolumn.dopgrid4{
+    width: 31.3%;
+}
+ 
+/* 5/12 */   
+.dopgridrow .dopgridcolumn.dopgrid5{
+    width: 40.5%;
+}
+ 
+/* 1/2 */   
+.dopgridrow .dopgridcolumn.dopgrid6{
+    width: 48.5%;
+}
+ 
+/* 7/12 */   
+.dopgridrow .dopgridcolumn.dopgrid7{
+    width: 56.5%;
+}
+  
+/* 2/3 */  
+.dopgridrow .dopgridcolumn.dopgrid8{
+    width: 65.7%;
+}
+   
+/* 3/4 */ 
+.dopgridrow .dopgridcolumn.dopgrid9{
+    width: 74.3%;
+}
+   
+/* 5/6 */ 
+.dopgridrow .dopgridcolumn.dopgrid10{
+    width: 82.9%;
+}
+
+/******************************************************************* End Grid */

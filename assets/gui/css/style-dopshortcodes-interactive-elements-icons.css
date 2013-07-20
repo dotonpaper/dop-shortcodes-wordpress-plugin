@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/*
+* Title                   : DOP Shortcodes (WordPress Plugin)
+* Version                 : 1.0
+* File                    : style-dopshortcodes-interactive-elements-icons.php
+* File Version            : 1.0
+* Created / Last Modified : 19 July 2013
+* Author                  : Dot on Paper
+* Copyright               : © 2013 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : DOP Shortcodes Interactive Elements Icons Stylesheet.
+*/
+
+@font-face{
+    font-family: 'DOP Shortcodes Interactive Elements Icons';
+    src:url('../fonts/DOP-Shortcodes-Interactive-Elements-Icons.eot');
+    src:url('../fonts/DOP-Shortcodes-Interactive-Elements-Icons.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DOP-Shortcodes-Interactive-Elements-Icons.woff') format('woff'),
+        url('../fonts/DOP-Shortcodes-Interactive-Elements-Icons.ttf') format('truetype'),
+        url('../fonts/DOP-Shortcodes-Interactive-Elements-Icons.svg#DOP-Shortcodes-Interactive-Elements-Icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before{
+    font-family: 'DOP Shortcodes Interactive Elements Icons';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="dops-shortcodes-interactive-elements-icon-"]{
+*/
+.dop-shortcodes-interactive-elements-icon-1,
+.dop-shortcodes-interactive-elements-icon-2,
+.dop-shortcodes-interactive-elements-icon-3,
+.dop-shortcodes-interactive-elements-icon-4,
+.dop-shortcodes-interactive-elements-icon-5,
+.dop-shortcodes-interactive-elements-icon-6,
+.dop-shortcodes-interactive-elements-icon-7,
+.dop-shortcodes-interactive-elements-icon-8,
+.dop-shortcodes-interactive-elements-icon-9,
+.dop-shortcodes-interactive-elements-icon-10,
+.dop-shortcodes-interactive-elements-icon-11,
+.dop-shortcodes-interactive-elements-icon-12,
+.dop-shortcodes-interactive-elements-icon-13,
+.dop-shortcodes-interactive-elements-icon-14,
+.dop-shortcodes-interactive-elements-icon-15,
+.dop-shortcodes-interactive-elements-icon-16,
+.dop-shortcodes-interactive-elements-icon-17,
+.dop-shortcodes-interactive-elements-icon-18,
+.dop-shortcodes-interactive-elements-icon-19,
+.dop-shortcodes-interactive-elements-icon-20,
+.dop-shortcodes-interactive-elements-icon-21,
+.dop-shortcodes-interactive-elements-icon-22,
+.dop-shortcodes-interactive-elements-icon-23,
+.dop-shortcodes-interactive-elements-icon-24,
+.dop-shortcodes-interactive-elements-icon-25,
+.dop-shortcodes-interactive-elements-icon-26,
+.dop-shortcodes-interactive-elements-icon-27,
+.dop-shortcodes-interactive-elements-icon-28,
+.dop-shortcodes-interactive-elements-icon-29,
+.dop-shortcodes-interactive-elements-icon-30,
+.dop-shortcodes-interactive-elements-icon-31,
+.dop-shortcodes-interactive-elements-icon-32,
+.dop-shortcodes-interactive-elements-icon-33,
+.dop-shortcodes-interactive-elements-icon-34,
+.dop-shortcodes-interactive-elements-icon-35,
+.dop-shortcodes-interactive-elements-icon-36,
+.dop-shortcodes-interactive-elements-icon-37,
+.dop-shortcodes-interactive-elements-icon-38,
+.dop-shortcodes-interactive-elements-icon-39,
+.dop-shortcodes-interactive-elements-icon-40,
+.dop-shortcodes-interactive-elements-icon-41,
+.dop-shortcodes-interactive-elements-icon-42,
+.dop-shortcodes-interactive-elements-icon-43,
+.dop-shortcodes-interactive-elements-icon-44,
+.dop-shortcodes-interactive-elements-icon-45,
+.dop-shortcodes-interactive-elements-icon-46,
+.dop-shortcodes-interactive-elements-icon-47,
+.dop-shortcodes-interactive-elements-icon-48{
+    font-family: 'DOP Shortcodes Interactive Elements Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.dop-shortcodes-interactive-elements-icon-1:before{content: "\e00e";}
+.dop-shortcodes-interactive-elements-icon-2:before{content: "\e00f";}
+.dop-shortcodes-interactive-elements-icon-3:before{content: "\e014";}
+.dop-shortcodes-interactive-elements-icon-4:before{content: "\e015";}
+.dop-shortcodes-interactive-elements-icon-5:before{content: "\e000";}
+.dop-shortcodes-interactive-elements-icon-6:before{content: "\e006";}
+.dop-shortcodes-interactive-elements-icon-7:before{content: "\e001";}
+.dop-shortcodes-interactive-elements-icon-8:before{content: "\e005";}
+.dop-shortcodes-interactive-elements-icon-9:before{content: "\e023";}
+.dop-shortcodes-interactive-elements-icon-10:before{content: "\e022";}
+.dop-shortcodes-interactive-elements-icon-11:before{content: "\e016";}
+.dop-shortcodes-interactive-elements-icon-12:before{content: "\e017";}
+.dop-shortcodes-interactive-elements-icon-13:before{content: "\e019";}
+.dop-shortcodes-interactive-elements-icon-14:before{content: "\e018";}
+.dop-shortcodes-interactive-elements-icon-15:before{content: "\e010";}
+.dop-shortcodes-interactive-elements-icon-16:before{content: "\e011";}
+.dop-shortcodes-interactive-elements-icon-17:before{content: "\e012";}
+.dop-shortcodes-interactive-elements-icon-18:before{content: "\e013";}
+.dop-shortcodes-interactive-elements-icon-19:before{content: "\e01b";}
+.dop-shortcodes-interactive-elements-icon-20:before{content: "\e01a";}
+.dop-shortcodes-interactive-elements-icon-21:before{content: "\e01c";}
+.dop-shortcodes-interactive-elements-icon-22:before{content: "\e01d";}
+.dop-shortcodes-interactive-elements-icon-23:before{content: "\e020";}
+.dop-shortcodes-interactive-elements-icon-24:before{content: "\e021";}
+.dop-shortcodes-interactive-elements-icon-25:before{content: "\e01f";}
+.dop-shortcodes-interactive-elements-icon-26:before{content: "\e01e";}
+.dop-shortcodes-interactive-elements-icon-27:before{content: "\e002";}
+.dop-shortcodes-interactive-elements-icon-28:before{content: "\e004";}
+.dop-shortcodes-interactive-elements-icon-29:before{content: "\e026";}
+.dop-shortcodes-interactive-elements-icon-30:before{content: "\e027";}
+.dop-shortcodes-interactive-elements-icon-31:before{content: "\e02e";}
+.dop-shortcodes-interactive-elements-icon-32:before{content: "\e02f";}
+.dop-shortcodes-interactive-elements-icon-33:before{content: "\e035";}
+.dop-shortcodes-interactive-elements-icon-34:before{content: "\e034";}
+.dop-shortcodes-interactive-elements-icon-35:before{content: "\e032";}
+.dop-shortcodes-interactive-elements-icon-36:before{content: "\e033";}
+.dop-shortcodes-interactive-elements-icon-37:before{content: "\e037";}
+.dop-shortcodes-interactive-elements-icon-38:before{content: "\e036";}
+.dop-shortcodes-interactive-elements-icon-39:before{content: "\e003";}
+.dop-shortcodes-interactive-elements-icon-40:before{content: "\e007";}
+.dop-shortcodes-interactive-elements-icon-41:before{content: "\e038";}
+.dop-shortcodes-interactive-elements-icon-42:before{content: "\e039";}
+.dop-shortcodes-interactive-elements-icon-43:before{content: "\e008";}
+.dop-shortcodes-interactive-elements-icon-44:before{content: "\e00b";}
+.dop-shortcodes-interactive-elements-icon-45:before{content: "\e009";}
+.dop-shortcodes-interactive-elements-icon-46:before{content: "\e00c";}
+.dop-shortcodes-interactive-elements-icon-47:before{content: "\e00a";}
+.dop-shortcodes-interactive-elements-icon-48:before{content: "\e00d";}

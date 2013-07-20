@@ -1,0 +1,509 @@
+@charset "utf-8";
+
+/*
+* Title                   : DOP Shortcodes (WordPress Plugin)
+* Version                 : 1.0
+* File                    : style-dopshortcodes-social-icons.php
+* File Version            : 1.0
+* Created / Last Modified : 19 July 2013
+* Author                  : Dot on Paper
+* Copyright               : © 2013 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : DOP Shortcodes Social Icons Stylesheet.
+*/
+
+@font-face{
+    font-family: 'DOP Shortcodes Social Icons';
+    src:url('../fonts/DOP-Shortcodes-Social-Icons.eot');
+    src:url('../fonts/DOP-Shortcodes-Social-Icons.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DOP-Shortcodes-Social-Icons.woff') format('woff'),
+        url('../fonts/DOP-Shortcodes-Social-Icons.ttf') format('truetype'),
+        url('../fonts/DOP-Shortcodes-Social-Icons.svg#DOP-Shortcodes-Social-Icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before{
+    font-family: 'DOP Shortcodes Social Icons';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="social-icon-"] {
+*/
+.dop-shortcodes-social-icon-zynga, .dop-shortcodes-social-icon-zootool, .dop-shortcodes-social-icon-zerply, .dop-shortcodes-social-icon-youtube, .dop-shortcodes-social-icon-youtube-alt, .dop-shortcodes-social-icon-yelp, .dop-shortcodes-social-icon-yahoo, .dop-shortcodes-social-icon-yahoo-messenger, .dop-shortcodes-social-icon-yahoo-buzz, .dop-shortcodes-social-icon-xing, .dop-shortcodes-social-icon-wordpress, .dop-shortcodes-social-icon-wordpress-alt, .dop-shortcodes-social-icon-wists, .dop-shortcodes-social-icon-windows, .dop-shortcodes-social-icon-wikipedia, .dop-shortcodes-social-icon-whatsapp, .dop-shortcodes-social-icon-w3, .dop-shortcodes-social-icon-virb, .dop-shortcodes-social-icon-vimeo, .dop-shortcodes-social-icon-viddler, .dop-shortcodes-social-icon-vcard, .dop-shortcodes-social-icon-twitter, .dop-shortcodes-social-icon-twitter-alt, .dop-shortcodes-social-icon-tumblr, .dop-shortcodes-social-icon-tripit, .dop-shortcodes-social-icon-tribenet, .dop-shortcodes-social-icon-threewordsme, .dop-shortcodes-social-icon-technorati, .dop-shortcodes-social-icon-stumbleupon, .dop-shortcodes-social-icon-steam, .dop-shortcodes-social-icon-squidoo, .dop-shortcodes-social-icon-squarespace, .dop-shortcodes-social-icon-spotify, .dop-shortcodes-social-icon-soundcloud, .dop-shortcodes-social-icon-smugmug, .dop-shortcodes-social-icon-slideshare, .dop-shortcodes-social-icon-slashdot, .dop-shortcodes-social-icon-skype, .dop-shortcodes-social-icon-simplenote, .dop-shortcodes-social-icon-sharethis, .dop-shortcodes-social-icon-scribd, .dop-shortcodes-social-icon-rss, .dop-shortcodes-social-icon-roboto, .dop-shortcodes-social-icon-retweet, .dop-shortcodes-social-icon-reddit, .dop-shortcodes-social-icon-readernaut, .dop-shortcodes-social-icon-rdio, .dop-shortcodes-social-icon-quora, .dop-shortcodes-social-icon-quik, .dop-shortcodes-social-icon-qik, .dop-shortcodes-social-icon-posterous, .dop-shortcodes-social-icon-podcast, .dop-shortcodes-social-icon-plurk, .dop-shortcodes-social-icon-plixi, .dop-shortcodes-social-icon-playstation, .dop-shortcodes-social-icon-pingchat, .dop-shortcodes-social-icon-ping, .dop-shortcodes-social-icon-pinboardin, .dop-shortcodes-social-icon-picassa, .dop-shortcodes-social-icon-picasa, .dop-shortcodes-social-icon-photobucket, .dop-shortcodes-social-icon-paypal, .dop-shortcodes-social-icon-path, .dop-shortcodes-social-icon-pandora, .dop-shortcodes-social-icon-orkut, .dop-shortcodes-social-icon-openid, .dop-shortcodes-social-icon-officialfm, .dop-shortcodes-social-icon-newsvine, .dop-shortcodes-social-icon-myspace, .dop-shortcodes-social-icon-myspace-alt, .dop-shortcodes-social-icon-msn-messenger, .dop-shortcodes-social-icon-mobileme, .dop-shortcodes-social-icon-mixx, .dop-shortcodes-social-icon-mixx-alt, .dop-shortcodes-social-icon-mister-wong, .dop-shortcodes-social-icon-ming, .dop-shortcodes-social-icon-metacafe, .dop-shortcodes-social-icon-meetup, .dop-shortcodes-social-icon-lovedsgn, .dop-shortcodes-social-icon-livejournal, .dop-shortcodes-social-icon-linkedin, .dop-shortcodes-social-icon-linkedin-alt, .dop-shortcodes-social-icon-lastfm, .dop-shortcodes-social-icon-krop, .dop-shortcodes-social-icon-kik, .dop-shortcodes-social-icon-itunes, .dop-shortcodes-social-icon-instapaper, .dop-shortcodes-social-icon-identica, .dop-shortcodes-social-icon-icq, .dop-shortcodes-social-icon-hyves, .dop-shortcodes-social-icon-hype-machine, .dop-shortcodes-social-icon-hi5, .dop-shortcodes-social-icon-hacker-news, .dop-shortcodes-social-icon-grooveshark, .dop-shortcodes-social-icon-gowalla, .dop-shortcodes-social-icon-gowalla-alt, .dop-shortcodes-social-icon-google, .dop-shortcodes-social-icon-google-talk, .dop-shortcodes-social-icon-google-buzz, .dop-shortcodes-social-icon-goodreads, .dop-shortcodes-social-icon-github, .dop-shortcodes-social-icon-github-alt, .dop-shortcodes-social-icon-gdgt, .dop-shortcodes-social-icon-friendster, .dop-shortcodes-social-icon-friendfeed, .dop-shortcodes-social-icon-foursquare, .dop-shortcodes-social-icon-forrst, .dop-shortcodes-social-icon-formspring, .dop-shortcodes-social-icon-folkd, .dop-shortcodes-social-icon-flickr, .dop-shortcodes-social-icon-feedburner, .dop-shortcodes-social-icon-factome, .dop-shortcodes-social-icon-facebook, .dop-shortcodes-social-icon-facebook-places, .dop-shortcodes-social-icon-facebook-alt, .dop-shortcodes-social-icon-evernote, .dop-shortcodes-social-icon-etsy, .dop-shortcodes-social-icon-ember, .dop-shortcodes-social-icon-ebay, .dop-shortcodes-social-icon-dzone, .dop-shortcodes-social-icon-drupal, .dop-shortcodes-social-icon-dropbox, .dop-shortcodes-social-icon-dribbble, .dop-shortcodes-social-icon-diigo, .dop-shortcodes-social-icon-digg, .dop-shortcodes-social-icon-digg-alt, .dop-shortcodes-social-icon-deviantart, .dop-shortcodes-social-icon-designmoo, .dop-shortcodes-social-icon-designfloat, .dop-shortcodes-social-icon-designbump, .dop-shortcodes-social-icon-delicious, .dop-shortcodes-social-icon-dailybooth, .dop-shortcodes-social-icon-creative-commons, .dop-shortcodes-social-icon-coroflot, .dop-shortcodes-social-icon-cloudapp, .dop-shortcodes-social-icon-cinch, .dop-shortcodes-social-icon-brightkite, .dop-shortcodes-social-icon-bnter, .dop-shortcodes-social-icon-blogger, .dop-shortcodes-social-icon-blip, .dop-shortcodes-social-icon-bing, .dop-shortcodes-social-icon-behance, .dop-shortcodes-social-icon-bebo, .dop-shortcodes-social-icon-basecamp, .dop-shortcodes-social-icon-baidu, .dop-shortcodes-social-icon-aws, .dop-shortcodes-social-icon-arto, .dop-shortcodes-social-icon-apple, .dop-shortcodes-social-icon-app-store, .dop-shortcodes-social-icon-amazon, .dop-shortcodes-social-icon-aim, .dop-shortcodes-social-icon-aim-alt {
+    font-family: 'DOP Shortcodes Social Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.dop-shortcodes-social-icon-zynga:before {
+	content: "\e000";
+}
+.dop-shortcodes-social-icon-zootool:before {
+	content: "\e001";
+}
+.dop-shortcodes-social-icon-zerply:before {
+	content: "\e002";
+}
+.dop-shortcodes-social-icon-youtube:before {
+	content: "\e003";
+}
+.dop-shortcodes-social-icon-youtube-alt:before {
+	content: "\e004";
+}
+.dop-shortcodes-social-icon-yelp:before {
+	content: "\e005";
+}
+.dop-shortcodes-social-icon-yahoo:before {
+	content: "\e006";
+}
+.dop-shortcodes-social-icon-yahoo-messenger:before {
+	content: "\e007";
+}
+.dop-shortcodes-social-icon-yahoo-buzz:before {
+	content: "\e008";
+}
+.dop-shortcodes-social-icon-xing:before {
+	content: "\e009";
+}
+.dop-shortcodes-social-icon-wordpress:before {
+	content: "\e00a";
+}
+.dop-shortcodes-social-icon-wordpress-alt:before {
+	content: "\e00b";
+}
+.dop-shortcodes-social-icon-wists:before {
+	content: "\e00c";
+}
+.dop-shortcodes-social-icon-windows:before {
+	content: "\e00d";
+}
+.dop-shortcodes-social-icon-wikipedia:before {
+	content: "\e00e";
+}
+.dop-shortcodes-social-icon-whatsapp:before {
+	content: "\e00f";
+}
+.dop-shortcodes-social-icon-w3:before {
+	content: "\e010";
+}
+.dop-shortcodes-social-icon-virb:before {
+	content: "\e011";
+}
+.dop-shortcodes-social-icon-vimeo:before {
+	content: "\e012";
+}
+.dop-shortcodes-social-icon-viddler:before {
+	content: "\e013";
+}
+.dop-shortcodes-social-icon-vcard:before {
+	content: "\e014";
+}
+.dop-shortcodes-social-icon-twitter:before {
+	content: "\e015";
+}
+.dop-shortcodes-social-icon-twitter-alt:before {
+	content: "\e016";
+}
+.dop-shortcodes-social-icon-tumblr:before {
+	content: "\e017";
+}
+.dop-shortcodes-social-icon-tripit:before {
+	content: "\e018";
+}
+.dop-shortcodes-social-icon-tribenet:before {
+	content: "\e019";
+}
+.dop-shortcodes-social-icon-threewordsme:before {
+	content: "\e01a";
+}
+.dop-shortcodes-social-icon-technorati:before {
+	content: "\e01b";
+}
+.dop-shortcodes-social-icon-stumbleupon:before {
+	content: "\e01c";
+}
+.dop-shortcodes-social-icon-steam:before {
+	content: "\e01d";
+}
+.dop-shortcodes-social-icon-squidoo:before {
+	content: "\e01e";
+}
+.dop-shortcodes-social-icon-squarespace:before {
+	content: "\e01f";
+}
+.dop-shortcodes-social-icon-spotify:before {
+	content: "\e020";
+}
+.dop-shortcodes-social-icon-soundcloud:before {
+	content: "\e021";
+}
+.dop-shortcodes-social-icon-smugmug:before {
+	content: "\e022";
+}
+.dop-shortcodes-social-icon-slideshare:before {
+	content: "\e023";
+}
+.dop-shortcodes-social-icon-slashdot:before {
+	content: "\e024";
+}
+.dop-shortcodes-social-icon-skype:before {
+	content: "\e025";
+}
+.dop-shortcodes-social-icon-simplenote:before {
+	content: "\e026";
+}
+.dop-shortcodes-social-icon-sharethis:before {
+	content: "\e027";
+}
+.dop-shortcodes-social-icon-scribd:before {
+	content: "\e028";
+}
+.dop-shortcodes-social-icon-rss:before {
+	content: "\e029";
+}
+.dop-shortcodes-social-icon-roboto:before {
+	content: "\e02a";
+}
+.dop-shortcodes-social-icon-retweet:before {
+	content: "\e02b";
+}
+.dop-shortcodes-social-icon-reddit:before {
+	content: "\e02c";
+}
+.dop-shortcodes-social-icon-readernaut:before {
+	content: "\e02d";
+}
+.dop-shortcodes-social-icon-rdio:before {
+	content: "\e02e";
+}
+.dop-shortcodes-social-icon-quora:before {
+	content: "\e02f";
+}
+.dop-shortcodes-social-icon-quik:before {
+	content: "\e030";
+}
+.dop-shortcodes-social-icon-qik:before {
+	content: "\e031";
+}
+.dop-shortcodes-social-icon-posterous:before {
+	content: "\e032";
+}
+.dop-shortcodes-social-icon-podcast:before {
+	content: "\e033";
+}
+.dop-shortcodes-social-icon-plurk:before {
+	content: "\e034";
+}
+.dop-shortcodes-social-icon-plixi:before {
+	content: "\e035";
+}
+.dop-shortcodes-social-icon-playstation:before {
+	content: "\e036";
+}
+.dop-shortcodes-social-icon-pingchat:before {
+	content: "\e037";
+}
+.dop-shortcodes-social-icon-ping:before {
+	content: "\e038";
+}
+.dop-shortcodes-social-icon-pinboardin:before {
+	content: "\e039";
+}
+.dop-shortcodes-social-icon-picassa:before {
+	content: "\e03a";
+}
+.dop-shortcodes-social-icon-picasa:before {
+	content: "\e03b";
+}
+.dop-shortcodes-social-icon-photobucket:before {
+	content: "\e03c";
+}
+.dop-shortcodes-social-icon-paypal:before {
+	content: "\e03d";
+}
+.dop-shortcodes-social-icon-path:before {
+	content: "\e03e";
+}
+.dop-shortcodes-social-icon-pandora:before {
+	content: "\e03f";
+}
+.dop-shortcodes-social-icon-orkut:before {
+	content: "\e040";
+}
+.dop-shortcodes-social-icon-openid:before {
+	content: "\e041";
+}
+.dop-shortcodes-social-icon-officialfm:before {
+	content: "\e042";
+}
+.dop-shortcodes-social-icon-newsvine:before {
+	content: "\e043";
+}
+.dop-shortcodes-social-icon-myspace:before {
+	content: "\e044";
+}
+.dop-shortcodes-social-icon-myspace-alt:before {
+	content: "\e045";
+}
+.dop-shortcodes-social-icon-msn-messenger:before {
+	content: "\e046";
+}
+.dop-shortcodes-social-icon-mobileme:before {
+	content: "\e047";
+}
+.dop-shortcodes-social-icon-mixx:before {
+	content: "\e048";
+}
+.dop-shortcodes-social-icon-mixx-alt:before {
+	content: "\e049";
+}
+.dop-shortcodes-social-icon-mister-wong:before {
+	content: "\e04a";
+}
+.dop-shortcodes-social-icon-ming:before {
+	content: "\e04b";
+}
+.dop-shortcodes-social-icon-metacafe:before {
+	content: "\e04c";
+}
+.dop-shortcodes-social-icon-meetup:before {
+	content: "\e04d";
+}
+.dop-shortcodes-social-icon-lovedsgn:before {
+	content: "\e04e";
+}
+.dop-shortcodes-social-icon-livejournal:before {
+	content: "\e04f";
+}
+.dop-shortcodes-social-icon-linkedin:before {
+	content: "\e050";
+}
+.dop-shortcodes-social-icon-linkedin-alt:before {
+	content: "\e051";
+}
+.dop-shortcodes-social-icon-lastfm:before {
+	content: "\e052";
+}
+.dop-shortcodes-social-icon-krop:before {
+	content: "\e053";
+}
+.dop-shortcodes-social-icon-kik:before {
+	content: "\e054";
+}
+.dop-shortcodes-social-icon-itunes:before {
+	content: "\e055";
+}
+.dop-shortcodes-social-icon-instapaper:before {
+	content: "\e056";
+}
+.dop-shortcodes-social-icon-identica:before {
+	content: "\e057";
+}
+.dop-shortcodes-social-icon-icq:before {
+	content: "\e058";
+}
+.dop-shortcodes-social-icon-hyves:before {
+	content: "\e059";
+}
+.dop-shortcodes-social-icon-hype-machine:before {
+	content: "\e05a";
+}
+.dop-shortcodes-social-icon-hi5:before {
+	content: "\e05b";
+}
+.dop-shortcodes-social-icon-hacker-news:before {
+	content: "\e05c";
+}
+.dop-shortcodes-social-icon-grooveshark:before {
+	content: "\e05d";
+}
+.dop-shortcodes-social-icon-gowalla:before {
+	content: "\e05e";
+}
+.dop-shortcodes-social-icon-gowalla-alt:before {
+	content: "\e05f";
+}
+.dop-shortcodes-social-icon-google:before {
+	content: "\e060";
+}
+.dop-shortcodes-social-icon-google-talk:before {
+	content: "\e061";
+}
+.dop-shortcodes-social-icon-google-buzz:before {
+	content: "\e062";
+}
+.dop-shortcodes-social-icon-goodreads:before {
+	content: "\e063";
+}
+.dop-shortcodes-social-icon-github:before {
+	content: "\e064";
+}
+.dop-shortcodes-social-icon-github-alt:before {
+	content: "\e065";
+}
+.dop-shortcodes-social-icon-gdgt:before {
+	content: "\e066";
+}
+.dop-shortcodes-social-icon-friendster:before {
+	content: "\e067";
+}
+.dop-shortcodes-social-icon-friendfeed:before {
+	content: "\e068";
+}
+.dop-shortcodes-social-icon-foursquare:before {
+	content: "\e069";
+}
+.dop-shortcodes-social-icon-forrst:before {
+	content: "\e06a";
+}
+.dop-shortcodes-social-icon-formspring:before {
+	content: "\e06b";
+}
+.dop-shortcodes-social-icon-folkd:before {
+	content: "\e06c";
+}
+.dop-shortcodes-social-icon-flickr:before {
+	content: "\e06d";
+}
+.dop-shortcodes-social-icon-feedburner:before {
+	content: "\e06e";
+}
+.dop-shortcodes-social-icon-factome:before {
+	content: "\e06f";
+}
+.dop-shortcodes-social-icon-facebook:before {
+	content: "\e070";
+}
+.dop-shortcodes-social-icon-facebook-places:before {
+	content: "\e071";
+}
+.dop-shortcodes-social-icon-facebook-alt:before {
+	content: "\e072";
+}
+.dop-shortcodes-social-icon-evernote:before {
+	content: "\e073";
+}
+.dop-shortcodes-social-icon-etsy:before {
+	content: "\e074";
+}
+.dop-shortcodes-social-icon-ember:before {
+	content: "\e075";
+}
+.dop-shortcodes-social-icon-ebay:before {
+	content: "\e076";
+}
+.dop-shortcodes-social-icon-dzone:before {
+	content: "\e077";
+}
+.dop-shortcodes-social-icon-drupal:before {
+	content: "\e078";
+}
+.dop-shortcodes-social-icon-dropbox:before {
+	content: "\e079";
+}
+.dop-shortcodes-social-icon-dribbble:before {
+	content: "\e07a";
+}
+.dop-shortcodes-social-icon-diigo:before {
+	content: "\e07b";
+}
+.dop-shortcodes-social-icon-digg:before {
+	content: "\e07c";
+}
+.dop-shortcodes-social-icon-digg-alt:before {
+	content: "\e07d";
+}
+.dop-shortcodes-social-icon-deviantart:before {
+	content: "\e07e";
+}
+.dop-shortcodes-social-icon-designmoo:before {
+	content: "\e07f";
+}
+.dop-shortcodes-social-icon-designfloat:before {
+	content: "\e080";
+}
+.dop-shortcodes-social-icon-designbump:before {
+	content: "\e081";
+}
+.dop-shortcodes-social-icon-delicious:before {
+	content: "\e082";
+}
+.dop-shortcodes-social-icon-dailybooth:before {
+	content: "\e083";
+}
+.dop-shortcodes-social-icon-creative-commons:before {
+	content: "\e084";
+}
+.dop-shortcodes-social-icon-coroflot:before {
+	content: "\e085";
+}
+.dop-shortcodes-social-icon-cloudapp:before {
+	content: "\e086";
+}
+.dop-shortcodes-social-icon-cinch:before {
+	content: "\e087";
+}
+.dop-shortcodes-social-icon-brightkite:before {
+	content: "\e088";
+}
+.dop-shortcodes-social-icon-bnter:before {
+	content: "\e089";
+}
+.dop-shortcodes-social-icon-blogger:before {
+	content: "\e08a";
+}
+.dop-shortcodes-social-icon-blip:before {
+	content: "\e08b";
+}
+.dop-shortcodes-social-icon-bing:before {
+	content: "\e08c";
+}
+.dop-shortcodes-social-icon-behance:before {
+	content: "\e08d";
+}
+.dop-shortcodes-social-icon-bebo:before {
+	content: "\e08e";
+}
+.dop-shortcodes-social-icon-basecamp:before {
+	content: "\e08f";
+}
+.dop-shortcodes-social-icon-baidu:before {
+	content: "\e090";
+}
+.dop-shortcodes-social-icon-aws:before {
+	content: "\e091";
+}
+.dop-shortcodes-social-icon-arto:before {
+	content: "\e092";
+}
+.dop-shortcodes-social-icon-apple:before {
+	content: "\e093";
+}
+.dop-shortcodes-social-icon-app-store:before {
+	content: "\e094";
+}
+.dop-shortcodes-social-icon-amazon:before {
+	content: "\e095";
+}
+.dop-shortcodes-social-icon-aim:before {
+	content: "\e096";
+}
+.dop-shortcodes-social-icon-aim-alt:before {
+	content: "\e097";
+}
