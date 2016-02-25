@@ -2,9 +2,9 @@
 
 /*
 * Title                   : DOP Shortcodes (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.2
 * File                    : style-dopshortcodes-interactive-elements-icons.php
-* File Version            : 1.0
+* File Version            : 1.1
 * Created / Last Modified : 19 July 2013
 * Author                  : Dot on Paper
 * Copyright               : © 2013 Dot on Paper
@@ -13,7 +13,7 @@
 */
 
 @font-face{
-    font-family: 'DOP Shortcodes Interactive Elements Icons';
+    font-family: 'DOP Shortcodes IE Icons';
     src:url('../fonts/DOP-Shortcodes-Interactive-Elements-Icons.eot');
     src:url('../fonts/DOP-Shortcodes-Interactive-Elements-Icons.eot?#iefix') format('embedded-opentype'),
         url('../fonts/DOP-Shortcodes-Interactive-Elements-Icons.woff') format('woff'),
@@ -25,7 +25,7 @@
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before{
-    font-family: 'DOP Shortcodes Interactive Elements Icons';
+    font-family: 'DOP Shortcodes IE Icons';
     content: attr(data-icon);
     speak: none;
     font-weight: normal;
@@ -89,7 +89,7 @@ you can use the generic selector below, but it's slower:
 .dop-shortcodes-interactive-elements-icon-46,
 .dop-shortcodes-interactive-elements-icon-47,
 .dop-shortcodes-interactive-elements-icon-48{
-    font-family: 'DOP Shortcodes Interactive Elements Icons';
+    font-family: 'DOP Shortcodes IE Icons';
     speak: none;
     font-style: normal;
     font-weight: normal;

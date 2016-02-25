@@ -2,10 +2,10 @@
 
 /*
 * Title                   : DOP Shortcodes (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.2
 * File                    : dopshortcodes-frontend.php
-* File Version            : 1.0
-* Created / Last Modified : 19 July 2013
+* File Version            : 1.1
+* Created / Last Modified : 25 July 2013
 * Author                  : Dot on Paper
 * Copyright               : © 2013 Dot on Paper
 * Website                 : http://www.dotonpaper.net
@@ -245,15 +245,15 @@
                                              'class' => '',
                                              'errorcallback' => '',
                                              'height' => '200px',
-                                             'loaderurl' => WP_PLUGIN_URL.'/dopshortcodes/assets/gui/images/dopil-loader.gif',
+                                             'loaderurl' => WP_PLUGIN_URL.'/dop-shortcodes/assets/gui/images/dopil-loader.gif',
                                              'loadinginorder' => 'true',
                                              'loadpreloaderfirst' => 'true',
-                                             'noimageurl' => WP_PLUGIN_URL.'/dopshortcodes/assets/gui/images/dopil-no-image.png',
+                                             'noimageurl' => WP_PLUGIN_URL.'/dop-shortcodes/assets/gui/images/dopil-no-image.png',
                                              'imagedelay' => '600',
                                              'imagesize' => 'fill',
                                              'reinitialize' => 'false',
                                              'successcallback' => '',
-                                             'width' => '350px'), $atts));
+                                             'width' => '100%'), $atts));
                 $data = array();
                 $this->no_images++;
                 
@@ -263,15 +263,15 @@
                     $class = array_key_exists('class', $atts) ? $atts['class']:'';
                     $errorcallback = array_key_exists('errorcallback', $atts) ? $atts['errorcallback']:'';
                     $height = array_key_exists('height', $atts) ? $atts['height']:'200px';
-                    $loaderurl = array_key_exists('loaderurl', $atts) ? $atts['loaderurl']:WP_PLUGIN_URL.'/dopshortcodes/assets/gui/images/dopil-loader.gif';
+                    $loaderurl = array_key_exists('loaderurl', $atts) ? $atts['loaderurl']:WP_PLUGIN_URL.'/dop-shortcodes/assets/gui/images/dopil-loader.gif';
                     $loadinginorder = array_key_exists('loadinginorder', $atts) ? $atts['loadinginorder']:'true';
                     $loadpreloaderfirst = array_key_exists('loadpreloaderfirst', $atts) ? $atts['loadpreloaderfirst']:'true';
-                    $noimageurl = array_key_exists('noimageurl', $atts) ? $atts['noimageurl']:WP_PLUGIN_URL.'/dopshortcodes/assets/gui/images/dopil-no-image.png';
+                    $noimageurl = array_key_exists('noimageurl', $atts) ? $atts['noimageurl']:WP_PLUGIN_URL.'/dop-shortcodes/assets/gui/images/dopil-no-image.png';
                     $imagedelay = array_key_exists('imagedelay', $atts) ? $atts['imagedelay']:'600';
                     $imagesize = array_key_exists('imagesize', $atts) ? $atts['imagesize']:'fill';
                     $reinitialize = array_key_exists('reinitialize', $atts) ? $atts['reinitialize']:'false';
                     $successcallback = array_key_exists('successcallback', $atts) ? $atts['successcallback']:'';
-                    $width = array_key_exists('width', $atts) ? $atts['width']:'350px';
+                    $width = array_key_exists('width', $atts) ? $atts['width']:'100%';
                 }
                 else{
                     $align = 'none';
@@ -279,15 +279,15 @@
                     $class = '';
                     $errorcallback = '';
                     $height = '200px';
-                    $loaderurl = WP_PLUGIN_URL.'/dopshortcodes/assets/gui/images/dopil-loader.gif';
+                    $loaderurl = WP_PLUGIN_URL.'/dop-shortcodes/assets/gui/images/dopil-loader.gif';
                     $loadinginorder = 'true';
                     $loadpreloaderfirst = 'true';
-                    $noimageurl = WP_PLUGIN_URL.'/dopshortcodes/assets/gui/images/dopil-no-image.png';
+                    $noimageurl = WP_PLUGIN_URL.'/dop-shortcodes/assets/gui/images/dopil-no-image.png';
                     $imagedelay = '600';
                     $imagesize = 'fill';
                     $reinitialize = 'false';
                     $successcallback = '';
-                    $width = '350px';                    
+                    $width = '100%';                    
                 }
                 
                 array_push($data, '<span id="dopimage'.$this->no_images.'" class="dopimage '.$align.' '.$class.'" style="height: '.$height.'; width: '.$width.';">'.$content.'</span>');
@@ -361,16 +361,16 @@
             function socialIcon($atts, $content = null){
                 extract(shortcode_atts(array('class' => '',
                                              'network' => 'facebook',
-                                             'url' => 'http://www.facebook.com'), $atts));
+                                             'url' => 'javascript:void(0)'), $atts));
                 if (is_array($atts)){
                     $class = array_key_exists('class', $atts) ? $atts['class']:'';
                     $network = array_key_exists('network', $atts) ? $atts['network']:'facebook';
-                    $url = array_key_exists('url', $atts) ? $atts['url']:'http://www.facebook.com';
+                    $url = array_key_exists('url', $atts) ? $atts['url']:'javascript:void(0)';
                 }
                 else{
                     $class = '';
                     $network = 'facebook';
-                    $url = 'http://www.facebook.com';
+                    $url = 'javascript:void(0)';
                 }
                 
                 return '<a href="'.$url.'" target="_blank" class="dopsocialicon dop-shortcodes-social-icon-'.$network.'">

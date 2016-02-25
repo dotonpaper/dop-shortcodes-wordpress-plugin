@@ -14,7 +14,7 @@ This is a collections of shortcodes we use in our themes.
 
 View [demo](http://dopdemo.net/wp/dop-shortcodes/) here.
 
-This is a collections of shortcodes we use in our themes. We always accept feedback and constructive criticism so if you have something to say please use the support forum.
+This is a collections of shortcodes we use in our themes. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/dop-shortcodes).
 
 = Shortcodes List =
 
@@ -131,10 +131,6 @@ Upload the folder **dopshortcodes** from the zip file to "wp-content/plugins/" a
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
-
-An answer to that question.
-
 Click [here](http://help.dotonpaper.net/dop-shortcodes-wordpress-plugin.html) to view documentation.
 
 == Screenshots ==
@@ -143,9 +139,19 @@ View [demo](http://dopdemo.net/wp/dop-shortcodes/) here.
 
 == Changelog ==
 
+= 1.2 =
+* IE Interactive Elements icons bug fixed.
+
+= 1.1 =
+* Image Loader paths fixed.
+
 = 1.0 =
 * Initial release.
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.2 =
+* IE Interactive Elements icons bug fixed.
+
+= 1.1 =
+* Image Loader paths fixed.
